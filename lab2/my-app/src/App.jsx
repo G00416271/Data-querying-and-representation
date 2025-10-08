@@ -12,6 +12,9 @@ import Header from './assets/headers' // header component
 import Content from './assets/content'// Content component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import Read from './pages/read';
+import Create from './pages/create';
+
 
 export default function App() {
   return (
@@ -22,7 +25,7 @@ export default function App() {
             <Navbar.Brand href="#home">Navbar</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>    {/*home */}
-              <Nav.Link href="/read">Read</Nav.Link>    {/*Read page*/}
+              <Nav.Link href="/Read">Read</Nav.Link>    {/*Read page*/}
               <Nav.Link href="/create">Create</Nav.Link>  {/*Create page*/}
             </Nav>
           </Container>
@@ -31,8 +34,8 @@ export default function App() {
       {/*ROUTES, specified path for switching content*/}
       <Routes> 
         <Route path="/" element={<Content />} />
-        <Route path="/read" element={<h1>Read Component</h1>} /> {/*route to read component*/}
-        <Route path="/create" element={<h1>Create Component</h1>} />{/*route to create component*/}
+        <Route path="/Read" element={<Read />} /> {/*route to read component*/}
+        <Route path="/create" element={<Create />} />{/*route to create component*/}
       </Routes>
     </>
   );
