@@ -2,6 +2,8 @@ import Movies from './movies.jsx';
 
 const Read = () =>{
 
+
+//Movie data
 const data = 
     [
   {
@@ -29,7 +31,7 @@ const data =
     return(
         <div>
             <h1>Hello from read component</h1>
-            <Movies myMovies={data}></Movies>
+            <Movies myMovies={data}></Movies> {/* movies from dataset */}
         </div>
     );
 }
