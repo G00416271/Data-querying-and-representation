@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+
+//create movie function 
 function Create() {
   const [title, setTitle] = useState('');
 
@@ -10,6 +12,7 @@ function Create() {
     console.log(title);
   }
 
+//Form 
   return (
     <div>
       <h2>This is my Create Component.</h2>
@@ -19,10 +22,10 @@ function Create() {
           <input type="text"
             className="form-control"
             value={title}
-            onChange={(e) => { setTitle(e.target.value) }}
+            onChange={(e) => { setTitle(e.target.value) }} //UseEffect Change 
           />
         </div>
-        <input type="submit" value="Add Movie" />
+        <input type="submit" value="Add Movie" /> 
       </form>
     </div>
   );

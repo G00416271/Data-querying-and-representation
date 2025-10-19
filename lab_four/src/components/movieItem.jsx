@@ -1,11 +1,10 @@
-import Card from 'react-bootstrap/Card';
-const MovieItem = (props) => {
+import Card from 'react-bootstrap/Card'; /// import card from bootstraps 
+const MovieItem = (props) => { //gets movie item 
     return (
         <div>
-            <Card className="text-center">
-
-            
-            
+            {/* card styling */}
+            {/* Dynamic card generation */}
+            <Card className="text-center">  
                 <Card.Body>
                     <Card.Title>{props.mymovie.Title}</Card.Title>
                     <img src={props.mymovie.Poster} />
